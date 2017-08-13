@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {firebaseApp} from "../firebase";
+import {Link} from 'react-router-dom';
 
 class SingUp extends Component {
 
@@ -66,6 +67,7 @@ class SingUp extends Component {
                     </button>
                 </div>
                 <div>{this.state.error.message}</div>
+                <div><Link to='/signin'>Already a user? Sign in.</Link></div>
             </div>
         )
     }
